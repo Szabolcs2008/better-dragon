@@ -5,6 +5,9 @@ build/
 out/
 classes/
 
+# my random shit
+things/
+
 # idea
 
 .idea/

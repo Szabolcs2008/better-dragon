@@ -10,12 +10,6 @@
   "icon": "assets/betterdragon/icon.png",
   "environment": "*",
   "entrypoints": {
-    "fabric-datagen": [
-      "me.Szabolcs2008.betterdragon.client.BetterdragonDataGenerator"
-    ],
-    "client": [
-      "me.Szabolcs2008.betterdragon.client.BetterdragonClient"
-    ],
     "main": [
       "me.Szabolcs2008.betterdragon.Betterdragon"
     ]
