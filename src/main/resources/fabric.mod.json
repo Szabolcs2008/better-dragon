@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "betterdragon",
+  "version": "${version}",
+  "name": "Better Dragon",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/betterdragon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.Szabolcs2008.betterdragon.client.BetterdragonDataGenerator"
+    ],
+    "client": [
+      "me.Szabolcs2008.betterdragon.client.BetterdragonClient"
+    ],
+    "main": [
+      "me.Szabolcs2008.betterdragon.Betterdragon"
+    ]
+  },
+  "mixins": [
+    "betterdragon.mixins.json",
+    {
+      "config": "betterdragon.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
