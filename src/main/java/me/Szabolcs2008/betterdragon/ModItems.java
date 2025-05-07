@@ -28,6 +28,7 @@ public class ModItems {
     }
 
     public static void initialize() {
+
     }
 
 }

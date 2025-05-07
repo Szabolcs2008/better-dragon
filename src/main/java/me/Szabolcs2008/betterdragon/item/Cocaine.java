@@ -6,9 +6,12 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 
 import net.minecraft.util.Hand;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 public class Cocaine extends Item {
@@ -29,7 +32,12 @@ public class Cocaine extends Item {
 
         Betterdragon.LOGGER.info("This shi works?");
 
-        player.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 120, 1), player);
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 120*20, 1), player);
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 180*20, 3), player);
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 180*20, 3), player);
+        player.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 240*20, 3), player);
+
+
 
         return ActionResult.CONSUME;
     }
